@@ -32,7 +32,7 @@ if($_SERVER["REQUEST_METHOD"] == 'POST') {
             header("Location: /?register&registration=fail_with_passing_data");
             exit();
         }
-    } else if(isset($_GET['increment'])) {
+    } else if(isset($_COOKIE['login']) && isset($_GET['increment'])) {
         header("Location: /?increment=success");
         exit();
     } else {

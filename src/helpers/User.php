@@ -7,19 +7,22 @@ class User
     private $login;
     private $password;
     private $age;
+    protected $counter;
 
     /**
      * User constructor.
      *
      * @param $login
      * @param $password
-     * @param $age
+     * @param int $age
+     * @param null $counter
      */
-    public function __construct($login, $password, $age=0)
+    public function __construct($login, $password, $age=0, $counter=null)
     {
         $this->login = $login;
         $this->password = $password;
         $this->age = $age;
+        $this->counter = $counter;
     }
 
     /**
@@ -70,5 +73,19 @@ class User
         $this->age = $age;
     }
 
+    /**
+     * @return null
+     */
+    public function getCounter()
+    {
+        return $this->counter;
+    }
 
+    /**
+     * @param null $counter
+     */
+    public function setCounter($counter)
+    {
+        $this->counter = $counter;
+    }
 }

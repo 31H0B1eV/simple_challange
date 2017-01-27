@@ -17,6 +17,9 @@ if(
     unset($_COOKIE['login']);
     setcookie('login', null, -1, '/');
 
+    unset($_COOKIE['userCounter']);
+    setcookie('userCounter', null, -1, '/');
+
     header("Location: ?login");
     exit();
 }
@@ -37,7 +40,7 @@ if(
         <?php
             if(isset($_GET['login']) || isset($_COOKIE['login'])) {
 
-                if($_GET['login'] != 'success' && $_COOKIE['login'] != 'success') {
+                if($_GET['login'] != 'success' && !isset($_COOKIE['login'])) {
                     echo <<<LOGIN
                 <form class='main-form' action="src/handler.php?login" method="post">
                     <div>
@@ -57,10 +60,14 @@ if(
                     </div>
                 </form>
 LOGIN;
-                } else if($_COOKIE['login'] === 'success') {
+                } else if($_COOKIE['login'] != '') {
+                    $counter = 0;
+                    if(isset($_COOKIE['userCounter'])) {
+                        $counter = (int) $_COOKIE['userCounter'];
+                    }
                         echo <<<LOGIN
                         <div class='success'>
-                            <h1>0</h1>
+                            <h1>$counter</h1>
                             <div class='success__buttons'>
                                 <div>
                                     <form action="src/handler.php?increment" method="post">

@@ -33,8 +33,11 @@ class WorkerFacade
 
         if($record_with_correct_login) {
             if(password_verify($password, $record_with_correct_login['password'])) {
-                setcookie('login', "success", time()+60*60*24*365, '/');
-                $_COOKIE['login'] = "success";
+                setcookie('login', serialize($this->getUser()), time()+60*60*24*365, '/');
+                $_COOKIE['login'] = serialize($this->getUser());
+
+                setcookie('userCounter', $record_with_correct_login['counter'], time()+60*60*24*365, '/');
+                $_COOKIE['userCounter'] = $record_with_correct_login['counter'];
 
                 header("Location: /?login=success");
                 exit();
@@ -43,6 +46,13 @@ class WorkerFacade
                 exit();
             }
         }
+    }
+
+    public function callIncrement()
+    {
+        $this->getDb()->increment($this->getUser());
+
+        return $this->getDb()->getRecord($this->getUser())['counter'];
     }
 
     /**

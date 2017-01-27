@@ -33,6 +33,14 @@ if($_SERVER["REQUEST_METHOD"] == 'POST') {
             exit();
         }
     } else if(isset($_COOKIE['login']) && isset($_GET['increment'])) {
+        $user = unserialize($_COOKIE['login']);
+
+        $job = new WorkerFactory($user->getLogin(), $user->getPassword());
+
+        $counter = $job->getFacade()->callIncrement();
+        setcookie('userCounter', $counter, time()+60*60*24*365, '/');
+        $_COOKIE['userCounter'] = $counter;
+
         header("Location: /?increment=success");
         exit();
     } else {

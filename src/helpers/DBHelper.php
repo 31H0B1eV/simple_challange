@@ -40,7 +40,7 @@ class DBHelper
               `user_id` INT NOT NULL AUTO_INCREMENT,
               `login` VARCHAR(80) NOT NULL,
               `age` INT NOT NULL,
-              `counter` INT,
+              `counter` INT NOT NULL,
               `password` CHAR(128) NOT NULL,
               PRIMARY KEY (`user_id`),
               UNIQUE INDEX (`login`)
@@ -76,8 +76,20 @@ class DBHelper
         $age = $user->getAge();
 
         return $conn->exec("
-            INSERT INTO `users` (`login`, `password`, `age`)
-            VALUES ('$login', '$password', '$age')
+            INSERT INTO `users` (`login`, `password`, `age`, `counter`)
+            VALUES ('$login', '$password', '$age', 0)
+        ");
+    }
+
+    public function increment(User $user)
+    {
+        $conn = $this->getConnection();
+        $login = $user->getLogin();
+
+        return $conn->query("
+            UPDATE `users` 
+            SET `counter`=`counter` + 1
+            WHERE `login`='$login'
         ");
     }
 }

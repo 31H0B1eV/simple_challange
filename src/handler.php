@@ -8,9 +8,14 @@ if($_SERVER["REQUEST_METHOD"] == 'POST') {
     if(isset($_GET['login'])) {
         if($_POST['login'] && $_POST['password']) {
 
-            $job = new WorkerFactory($_POST['login'], $_POST['password']);
+            if($_POST['login'] != '' && $_POST['password'] != '' ) {
+                $job = new WorkerFactory($_POST['login'], $_POST['password']);
 
-            $job->getFacade()->login(Helpers::cleanUpInput($_POST['password']));
+                $job->getFacade()->login(Helpers::cleanUpInput($_POST['password']));
+            }
+        } else {
+            header("Location: /?login&error=wrong_request");
+            exit();
         }
     } else if(isset($_GET['register'])) {
         if(
@@ -19,13 +24,17 @@ if($_SERVER["REQUEST_METHOD"] == 'POST') {
             $_POST['birthday']
         ) {
 
-            $job = new WorkerFactory($_POST['login'], $_POST['password']);
+            $job = new WorkerFactory($_POST['login'], $_POST['password'], $_POST['birthday']);
 
             $job->getFacade()->registerUser();
 
         } else {
             header("Location: /?login&registration=fail_with_passing_data");
+            exit();
         }
+    } else {
+        header("Location: /?login&error=wrong_request");
+        exit();
     }
 } else {
     echo "Wrong request method: " . $_SERVER['REQUEST_METHOD'];

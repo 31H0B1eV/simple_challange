@@ -1,12 +1,22 @@
 <?php
- if(
-     !isset($_GET['login']) &&
-     !isset($_GET['register'])
- ) {
-     header("Location: ?login");
- } else if(isset($_GET['registration'])) {
-     echo $_GET['registration'];
- }
+if(
+    !isset($_COOKIE['login']) &&
+    !isset($_GET['login']) &&
+    !isset($_GET['register'])
+) {
+    header("Location: ?login");
+    exit();
+
+} else if(isset($_GET['registration'])) {
+    echo $_GET['registration'];
+
+} else if(isset($_GET['exit']) && isset($_COOKIE['login'])) {
+    unset($_COOKIE['login']);
+    setcookie('login', null, -1, '/');
+
+    header("Location: ?login");
+    exit();
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -17,12 +27,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 300px;
+        }
+
+        .error {
+            margin: 15px;
+            font-size: 2rem;
         }
 
         form {
@@ -96,9 +116,9 @@
 
     <div class="container">
         <?php
-            if(isset($_GET['login'])) {
+            if(isset($_GET['login']) || isset($_COOKIE['login'])) {
 
-                if($_GET['login'] != 'success') {
+                if($_GET['login'] != 'success' && $_COOKIE['login'] != 'success') {
                     echo <<<LOGIN
                 <form action="src/handler.php?login" method="post">
                     <div>
@@ -118,11 +138,23 @@
                     </div>
                 </form>
 LOGIN;
+                } else if($_COOKIE['login'] === 'success') {
+                        echo <<<LOGIN
+                        <a href="?exit">exit</a>
+LOGIN;
                 } else {
-                    echo "<h1>Logged in!</h1>";
+                    echo "cookie not set <a href=\"?login\">back to login</a>";
                 }
             } else if(isset($_GET['register'])) {
+                if($_GET['error']) {
+                    $error = $_GET['error'] == 'fail_user_low_age' ? 'Too young!' : 'Too old!';
+                    echo <<<ERROR
+                    <div class='error'>
+                        <p style='color: tomato;'>$error </p>
+                    </div>
+ERROR;
 
+                }
                 echo <<<REGISTER
                 <form action="src/handler.php?register" method="post">
                     <div>

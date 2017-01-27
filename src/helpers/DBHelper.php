@@ -6,14 +6,23 @@ use PDO;
 
 class DBHelper
 {
-    protected $host = '127.0.0.1';
-    protected $db   = 'hardnamefordatabase';
-    protected $user = 'homestead';
-    protected $pass = 'secret';
-    protected $charset = 'utf8';
+    protected $config;
+
+    protected $host;
+    protected $db;
+    protected $user;
+    protected $pass;
+    protected $charset;
 
     public function __construct()
     {
+        $this->setConfig(parse_ini_file(__DIR__ . '/../../.env.ini'));
+        $this->host = $this->config['host'];
+        $this->db = $this->config['database'];
+        $this->user = $this->config['username'];
+        $this->pass = $this->config['password'];
+        $this->charset = $this->config['charset'];
+
         $this->init(); // create users table if not exists
     }
 
@@ -91,5 +100,13 @@ class DBHelper
             SET `counter`=`counter` + 1
             WHERE `login`='$login'
         ");
+    }
+
+    /**
+     * @param mixed $config
+     */
+    public function setConfig($config)
+    {
+        $this->config = $config;
     }
 }

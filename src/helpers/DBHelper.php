@@ -40,6 +40,7 @@ class DBHelper
               `user_id` INT NOT NULL AUTO_INCREMENT,
               `login` VARCHAR(80) NOT NULL,
               `age` INT NOT NULL,
+              `counter` INT,
               `password` CHAR(128) NOT NULL,
               PRIMARY KEY (`user_id`),
               UNIQUE INDEX (`login`)

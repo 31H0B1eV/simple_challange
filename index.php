@@ -29,91 +29,7 @@ if(
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 300px;
-        }
-
-        .error {
-            margin: 15px;
-            font-size: 2rem;
-        }
-
-        form {
-            padding: 15px;
-
-            -webkit-box-shadow: 2px 4px 14px 5px rgba(0,0,0,0.55);
-            -moz-box-shadow: 2px 4px 14px 5px rgba(0,0,0,0.55);
-            box-shadow: 2px 4px 14px 5px rgba(0,0,0,0.55);
-        }
-
-        input {
-            padding: 5px;
-            margin: 10px;
-        }
-
-        input:focus {
-            box-shadow: 1px 2px 5px 3px rgba(81, 203, 238, 1);
-            border: 1px solid rgba(81, 203, 238, 1);
-        }
-
-        .btn {
-            display: block;
-            text-align: end;
-            padding-top: 15px;
-        }
-
-        a {
-            cursor: pointer;
-        }
-
-        .auth--form__button {
-            -moz-box-shadow:inset 0px 1px 0px 0px #9fb4f2;
-            -webkit-box-shadow:inset 0px 1px 0px 0px #9fb4f2;
-            box-shadow:inset 0px 1px 0px 0px #9fb4f2;
-            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
-            background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
-            background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
-            background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
-            background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
-            background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
-            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
-            background-color:#7892c2;
-            border:1px solid #4e6096;
-            display:inline-block;
-            cursor:pointer;
-            color:#ffffff;
-            font-family:Arial;
-            font-size:14px;
-            font-weight:bold;
-            padding:5px 32px;
-            text-decoration:none;
-            text-shadow:0px 1px 0px #283966;
-        }
-        .auth--form__button:hover {
-            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
-            background:-moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
-            background:-webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
-            background:-o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
-            background:-ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
-            background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
-            background-color:#476e9e;
-        }
-        .auth--form__button:active {
-            position:relative;
-            top:1px;
-        }
-    </style>
+    <link rel="stylesheet" href="public/style.css">
 </head>
 <body>
 
@@ -123,7 +39,7 @@ if(
 
                 if($_GET['login'] != 'success' && $_COOKIE['login'] != 'success') {
                     echo <<<LOGIN
-                <form action="src/handler.php?login" method="post">
+                <form class='main-form' action="src/handler.php?login" method="post">
                     <div>
                         <input type="text" name="login" placeholder="login">
                     </div>
@@ -143,7 +59,19 @@ if(
 LOGIN;
                 } else if($_COOKIE['login'] === 'success') {
                         echo <<<LOGIN
-                        <a href="?exit">exit</a>
+                        <div class='success'>
+                            <h1>0</h1>
+                            <div class='success__buttons'>
+                                <div>
+                                    <form action="src/handler.php?increment" method="post">
+                                        <button type='submit'>+1</button>
+                                    </form>
+                                </div>
+                                <div>
+                                    <a href="?exit">exit</a>
+                                </div>
+                            </div>
+                        </div>
 LOGIN;
                 } else {
                     echo "cookie not set <a href=\"?login\">back to login</a>";
@@ -159,7 +87,7 @@ ERROR;
 
                 }
                 echo <<<REGISTER
-                <form action="src/handler.php?register" method="post">
+                <form class='main-form' action="src/handler.php?register" method="post">
                     <div>
                         <input type="text" name="login" placeholder="login">
                     </div>

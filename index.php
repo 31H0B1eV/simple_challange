@@ -97,14 +97,14 @@
             if(isset($_GET['login'])) {
 
                 echo <<<LOGIN
-                <form action="src/helper.php" method="post">
+                <form action="src/handler.php?login" method="post">
                     <div>
                         <input type="text" name="login" placeholder="login">
                     </div>
                     <div>
                         <input type="password" name="password" placeholder="password">
                     </div>
-
+                    
                     <div>
                         <div class="btn">
                             <button class="auth--form__button" type="submit">login</button>
@@ -118,7 +118,7 @@ LOGIN;
             } else if(isset($_GET['register'])) {
 
                 echo <<<REGISTER
-                <form action="src/helper.php" method="post">
+                <form action="src/handler.php?register" method="post">
                     <div>
                         <input type="text" name="login" placeholder="login">
                     </div>
@@ -139,6 +139,8 @@ LOGIN;
                     </div>
                 </form>
 REGISTER;
+            } else {
+                echo "What do you want from me man?";
             }
         ?>
     </div>

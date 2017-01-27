@@ -23,7 +23,7 @@ class WorkerFacade
             header("Location: /?login&registration=success");
             exit();
         } else {
-            return header("Location: /?login&registration=fail_user_exists");
+            return header("Location: /?register&registration=fail_user_exists");
         }
     }
 

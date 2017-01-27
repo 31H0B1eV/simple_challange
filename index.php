@@ -10,6 +10,9 @@ if(
 } else if(isset($_GET['registration'])) {
     echo $_GET['registration'];
 
+} else if(isset($_GET['error'])) {
+    echo $_GET['error'];
+
 } else if(isset($_GET['exit']) && isset($_COOKIE['login'])) {
     unset($_COOKIE['login']);
     setcookie('login', null, -1, '/');

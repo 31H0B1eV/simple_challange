@@ -29,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"] == 'POST') {
             $job->getFacade()->registerUser();
 
         } else {
-            header("Location: /?login&registration=fail_with_passing_data");
+            header("Location: /?register&registration=fail_with_passing_data");
             exit();
         }
     } else {

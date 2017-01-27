@@ -1,5 +1,11 @@
 <?php
 
+namespace App\helpers;
+
+use App\helpers\User;
+use App\helpers\DBHelper;
+
+
 class WorkerFacade
 {
     protected $user;
@@ -10,8 +16,9 @@ class WorkerFacade
         if(!$this->getDb()->checkRecord($this->getUser())) {
             $this->getDb()->insertRecord($this->getUser());
             header("Location: /?login&registration=success");
+            exit();
         } else {
-            header("Location: /?login&registration=fail_user_exists");
+            return header("Location: /?login&registration=fail_user_exists");
         }
     }
 

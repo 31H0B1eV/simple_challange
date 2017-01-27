@@ -1,5 +1,11 @@
 <?php
 
+namespace App\helpers;
+
+use PDO;
+use App\helpers\User;
+
+
 class DBHelper
 {
     protected $host = '127.0.0.1';

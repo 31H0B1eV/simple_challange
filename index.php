@@ -4,6 +4,8 @@
      !isset($_GET['register'])
  ) {
      header("Location: ?login");
+ } else if(isset($_GET['registration'])) {
+     echo $_GET['registration'];
  }
 ?>
 <!doctype html>

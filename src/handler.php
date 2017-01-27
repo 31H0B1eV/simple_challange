@@ -1,10 +1,7 @@
 <?php
 require "../vendor/autoload.php";
 
-use App\helpers\User;
 use App\helpers\Helpers;
-use App\helpers\DBHelper;
-use App\helpers\WorkerFacade;
 use App\helpers\WorkerFactory;
 
 if($_SERVER["REQUEST_METHOD"] == 'POST') {

@@ -2,7 +2,6 @@
 
 namespace App\helpers;
 
-
 class User
 {
     private $login;

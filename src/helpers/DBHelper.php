@@ -3,8 +3,6 @@
 namespace App\helpers;
 
 use PDO;
-use App\helpers\User;
-
 
 class DBHelper
 {

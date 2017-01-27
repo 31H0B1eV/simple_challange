@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5a27cc4d-fc94-4533-96f0-d1105c647718" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/handler.php" afterPath="$PROJECT_DIR$/src/handler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/helpers/DBHelper.php" afterPath="$PROJECT_DIR$/src/helpers/DBHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/helpers/User.php" afterPath="$PROJECT_DIR$/src/helpers/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/helpers/WorkerFacade.php" afterPath="$PROJECT_DIR$/src/helpers/WorkerFacade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/helpers/WorkerFactory.php" afterPath="$PROJECT_DIR$/src/helpers/WorkerFactory.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,14 +32,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="handler.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/handler.php">
+      <file leaf-file-name="WorkerFactory.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/helpers/WorkerFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="e#41#62#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="40">
+              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,12 +59,12 @@
         <option value="$PROJECT_DIR$/handler.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/src/handler.php" />
         <option value="$PROJECT_DIR$/src/helpers/DBHelper.php" />
         <option value="$PROJECT_DIR$/src/helpers/User.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/src/helpers/WorkerFacade.php" />
         <option value="$PROJECT_DIR$/src/helpers/WorkerFactory.php" />
-        <option value="$PROJECT_DIR$/src/handler.php" />
       </list>
     </option>
   </component>
@@ -231,12 +232,12 @@
       <option name="presentableId" value="Default" />
       <updated>1485464474435</updated>
       <workItem from="1485464478437" duration="2185000" />
-      <workItem from="1485499770065" duration="21910000" />
+      <workItem from="1485499770065" duration="22033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24095000" />
+    <option name="totallyTimeSpent" value="24218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="5" width="1337" height="1161" extended-state="0" />
@@ -387,26 +388,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/User.php">
+    <entry file="file://$PROJECT_DIR$/src/handler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="100">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <marker date="1485521916576" expanded="true" signature="42:1097" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="114:216" ph=" User constructor. ..." />
-            <marker date="1485521916576" expanded="true" signature="277:384" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="393:420" ph=" @return mixed ..." />
-            <marker date="1485521916576" expanded="true" signature="453:494" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="503:536" ph=" @param mixed $login ..." />
-            <marker date="1485521916576" expanded="true" signature="575:618" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="627:654" ph=" @return mixed ..." />
-            <marker date="1485521916576" expanded="true" signature="690:734" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="743:779" ph=" @param mixed $password ..." />
-            <marker date="1485521916576" expanded="true" signature="824:873" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="882:909" ph=" @return mixed ..." />
-            <marker date="1485521916576" expanded="true" signature="940:979" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="988:1019" ph=" @param mixed $age ..." />
-            <marker date="1485521916576" expanded="true" signature="1054:1093" ph="{...}" />
+            <marker date="1485523669750" expanded="true" signature="45:96" ph="..." />
+            <marker date="1485523669750" expanded="true" signature="140:790" ph="..." />
+            <marker date="1485523669750" expanded="true" signature="172:397" ph="..." />
+            <marker date="1485523669750" expanded="true" signature="224:391" ph="..." />
+            <marker date="1485523669750" expanded="true" signature="434:788" ph="..." />
+            <marker date="1485523669750" expanded="true" signature="554:688" ph="..." />
+            <marker date="1485523669750" expanded="true" signature="696:782" ph="..." />
+            <marker date="1485523669750" expanded="true" signature="798:863" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/DBHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding>
+            <marker date="1485523698796" expanded="true" signature="55:1999" ph="{...}" />
+            <marker date="1485523698796" expanded="true" signature="272:343" ph="{...}" />
+            <marker date="1485523698796" expanded="true" signature="381:767" ph="{...}" />
+            <marker date="1485523698796" expanded="true" signature="485:675" ph="..." />
+            <marker date="1485523698796" expanded="true" signature="795:1210" ph="{...}" />
+            <marker date="1485523698796" expanded="true" signature="861:1202" ph="..." />
+            <marker date="1485523698796" expanded="true" signature="875:1191" ph="CREATE TABLE... Users" />
+            <marker date="1485523698796" expanded="true" signature="1240:1381" ph="{...}" />
+            <marker date="1485523698796" expanded="true" signature="1316:1361" ph="..." />
+            <marker date="1485523698796" expanded="true" signature="1330:1351" ph="SELECT * FRO... users" />
+            <marker date="1485523698796" expanded="true" signature="1424:1635" ph="{...}" />
+            <marker date="1485523698796" expanded="true" signature="1536:1618" ph="..." />
+            <marker date="1485523698796" expanded="true" signature="1550:1571" ph="SELECT `logi... users" />
+            <marker date="1485523698796" expanded="true" signature="1550:1599" ph="SELECT * FRO... users" />
+            <marker date="1485523698796" expanded="true" signature="1550:1600" ph="SELECT * FRO... users" />
+            <marker date="1485523698796" expanded="true" signature="1550:1608" ph="SELECT * FRO... users" />
+            <marker date="1485523698796" expanded="true" signature="1681:1997" ph="{...}" />
+            <marker date="1485523698796" expanded="true" signature="1866:1989" ph="..." />
+            <marker date="1485523698796" expanded="true" signature="1880:1979" ph="INSERT INTO `users`... " />
           </folding>
         </state>
       </provider>
@@ -425,82 +447,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/DBHelper.php">
+    <entry file="file://$PROJECT_DIR$/src/helpers/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1660">
-          <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+        <state relative-caret-position="40">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding>
-            <marker date="1485521624648" expanded="true" signature="35:61" ph="..." />
-            <marker date="1485521624648" expanded="true" signature="78:2022" ph="{...}" />
-            <marker date="1485521624648" expanded="true" signature="295:366" ph="{...}" />
-            <marker date="1485521624648" expanded="true" signature="404:790" ph="{...}" />
-            <marker date="1485521624648" expanded="true" signature="508:698" ph="..." />
-            <marker date="1485521624648" expanded="true" signature="818:1233" ph="{...}" />
-            <marker date="1485521624648" expanded="true" signature="884:1225" ph="..." />
-            <marker date="1485521624648" expanded="true" signature="898:1214" ph="CREATE TABLE... Users" />
-            <marker date="1485521624648" expanded="true" signature="1263:1404" ph="{...}" />
-            <marker date="1485521624648" expanded="true" signature="1339:1384" ph="..." />
-            <marker date="1485521624648" expanded="true" signature="1353:1374" ph="SELECT * FRO... users" />
-            <marker date="1485521624648" expanded="true" signature="1447:1658" ph="{...}" />
-            <marker date="1485521624648" expanded="true" signature="1559:1641" ph="..." />
-            <marker date="1485521624648" expanded="true" signature="1573:1594" ph="SELECT `logi... users" />
-            <marker date="1485521624648" expanded="true" signature="1573:1622" ph="SELECT * FRO... users" />
-            <marker date="1485521624648" expanded="true" signature="1573:1623" ph="SELECT * FRO... users" />
-            <marker date="1485521624648" expanded="true" signature="1573:1631" ph="SELECT * FRO... users" />
-            <marker date="1485521624648" expanded="true" signature="1704:2020" ph="{...}" />
-            <marker date="1485521624648" expanded="true" signature="1889:2012" ph="..." />
-            <marker date="1485521624648" expanded="true" signature="1903:2002" ph="INSERT INTO `users`... " />
+            <marker date="1485523698766" expanded="true" signature="41:1096" ph="{...}" />
+            <marker date="1485523698766" expanded="true" signature="113:215" ph=" User constructor. ..." />
+            <marker date="1485523698766" expanded="true" signature="276:383" ph="{...}" />
+            <marker date="1485523698766" expanded="true" signature="392:419" ph=" @return mixed ..." />
+            <marker date="1485523698766" expanded="true" signature="452:493" ph="{...}" />
+            <marker date="1485523698766" expanded="true" signature="502:535" ph=" @param mixed $login ..." />
+            <marker date="1485523698766" expanded="true" signature="574:617" ph="{...}" />
+            <marker date="1485523698766" expanded="true" signature="626:653" ph=" @return mixed ..." />
+            <marker date="1485523698766" expanded="true" signature="689:733" ph="{...}" />
+            <marker date="1485523698766" expanded="true" signature="742:778" ph=" @param mixed $password ..." />
+            <marker date="1485523698766" expanded="true" signature="823:872" ph="{...}" />
+            <marker date="1485523698766" expanded="true" signature="881:908" ph=" @return mixed ..." />
+            <marker date="1485523698766" expanded="true" signature="939:978" ph="{...}" />
+            <marker date="1485523698766" expanded="true" signature="987:1018" ph=" @param mixed $age ..." />
+            <marker date="1485523698766" expanded="true" signature="1053:1092" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/helpers/WorkerFacade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="40">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding>
-            <marker date="1485523319798" expanded="true" signature="50:1425" ph="{...}" />
-            <marker date="1485523319798" expanded="true" signature="128:446" ph="{...}" />
-            <marker date="1485523319798" expanded="true" signature="193:344" ph="..." />
-            <marker date="1485523319798" expanded="true" signature="352:439" ph="..." />
-            <marker date="1485523319798" expanded="true" signature="484:1003" ph="{...}" />
-            <marker date="1485523319798" expanded="true" signature="614:894" ph="..." />
-            <marker date="1485523319798" expanded="true" signature="699:789" ph="..." />
-            <marker date="1485523319798" expanded="true" signature="797:884" ph="..." />
-            <marker date="1485523319798" expanded="true" signature="902:996" ph="..." />
-            <marker date="1485523319798" expanded="true" signature="1012:1083" ph=" Worker constructor. ..." />
-            <marker date="1485523319798" expanded="true" signature="1143:1209" ph="{...}" />
-            <marker date="1485523319798" expanded="true" signature="1218:1244" ph=" @return User ..." />
-            <marker date="1485523319798" expanded="true" signature="1276:1316" ph="{...}" />
-            <marker date="1485523319798" expanded="true" signature="1325:1355" ph=" @return DBHelper ..." />
-            <marker date="1485523319798" expanded="true" signature="1385:1423" ph="{...}" />
+            <marker date="1485523698854" expanded="true" signature="49:1424" ph="{...}" />
+            <marker date="1485523698854" expanded="true" signature="127:445" ph="{...}" />
+            <marker date="1485523698854" expanded="true" signature="192:343" ph="..." />
+            <marker date="1485523698854" expanded="true" signature="351:438" ph="..." />
+            <marker date="1485523698854" expanded="true" signature="483:1002" ph="{...}" />
+            <marker date="1485523698854" expanded="true" signature="613:893" ph="..." />
+            <marker date="1485523698854" expanded="true" signature="698:788" ph="..." />
+            <marker date="1485523698854" expanded="true" signature="796:883" ph="..." />
+            <marker date="1485523698854" expanded="true" signature="901:995" ph="..." />
+            <marker date="1485523698854" expanded="true" signature="1011:1082" ph=" Worker constructor. ..." />
+            <marker date="1485523698854" expanded="true" signature="1142:1208" ph="{...}" />
+            <marker date="1485523698854" expanded="true" signature="1217:1243" ph=" @return User ..." />
+            <marker date="1485523698854" expanded="true" signature="1275:1315" ph="{...}" />
+            <marker date="1485523698854" expanded="true" signature="1324:1354" ph=" @return DBHelper ..." />
+            <marker date="1485523698854" expanded="true" signature="1384:1422" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/helpers/WorkerFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <marker date="1485523509855" expanded="true" signature="51:1043" ph="{...}" />
-            <marker date="1485523509855" expanded="true" signature="86:120" ph=" @return WorkerFacade ..." />
-            <marker date="1485523509855" expanded="true" signature="154:196" ph="{...}" />
-            <marker date="1485523509855" expanded="true" signature="205:309" ph=" WorkerFactory constructor. ..." />
-            <marker date="1485523509855" expanded="true" signature="370:1041" ph="{...}" />
-            <marker date="1485523509855" expanded="true" signature="411:694" ph="..." />
-            <marker date="1485523509855" expanded="true" signature="702:1034" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#41#62#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="40">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

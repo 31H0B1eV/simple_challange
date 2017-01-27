@@ -98,7 +98,8 @@
         <?php
             if(isset($_GET['login'])) {
 
-                echo <<<LOGIN
+                if($_GET['login'] != 'success') {
+                    echo <<<LOGIN
                 <form action="src/handler.php?login" method="post">
                     <div>
                         <input type="text" name="login" placeholder="login">
@@ -117,6 +118,9 @@
                     </div>
                 </form>
 LOGIN;
+                } else {
+                    echo "<h1>Logged in!</h1>";
+                }
             } else if(isset($_GET['register'])) {
 
                 echo <<<REGISTER

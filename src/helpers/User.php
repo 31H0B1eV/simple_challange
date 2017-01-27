@@ -16,7 +16,7 @@ class User
      * @param $password
      * @param $age
      */
-    public function __construct($login, $password, $age)
+    public function __construct($login, $password, $age=0)
     {
         $this->login = $login;
         $this->password = $password;

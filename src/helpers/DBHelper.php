@@ -58,7 +58,7 @@ class DBHelper
         ")->fetchAll();
     }
 
-    public function checkRecord(User $user)
+    public function getRecord(User $user)
     {
         $conn = $this->getConnection();
         $login = $user->getLogin();

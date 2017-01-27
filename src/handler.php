@@ -10,6 +10,15 @@ if($_SERVER["REQUEST_METHOD"] == 'POST') {
     if(isset($_GET['login'])) {
         if($_POST['login'] && $_POST['password']) {
 
+            $job = new WorkerFacade(
+                new User(
+                    Helpers::cleanUpInput($_POST['login']),
+                    password_hash(Helpers::cleanUpInput($_POST['password']), PASSWORD_DEFAULT)
+                ),
+                new DBHelper()
+            );
+
+            $job->login(Helpers::cleanUpInput($_POST['password']));
         }
     } else if(isset($_GET['register'])) {
         if(

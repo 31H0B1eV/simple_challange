@@ -2,9 +2,6 @@
 
 namespace App\helpers;
 
-use App\helpers\User;
-use App\helpers\DBHelper;
-
 
 class WorkerFacade
 {

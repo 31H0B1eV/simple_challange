@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a27cc4d-fc94-4533-96f0-d1105c647718" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/handler.php" afterPath="$PROJECT_DIR$/src/handler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/helpers/DBHelper.php" afterPath="$PROJECT_DIR$/src/helpers/DBHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/helpers/User.php" afterPath="$PROJECT_DIR$/src/helpers/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/helpers/WorkerFacade.php" afterPath="$PROJECT_DIR$/src/helpers/WorkerFacade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,13 +29,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WorkerFacade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/helpers/WorkerFacade.php">
+      <file leaf-file-name="handler.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/handler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="37" column="61" lean-forward="false" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+            <state relative-caret-position="540">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
-                <element signature="e#31#52#0#PHP" expanded="true" />
+                <element signature="e#41#62#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,9 +60,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/helpers/DBHelper.php" />
         <option value="$PROJECT_DIR$/src/helpers/User.php" />
-        <option value="$PROJECT_DIR$/src/handler.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/src/helpers/WorkerFacade.php" />
+        <option value="$PROJECT_DIR$/src/helpers/WorkerFactory.php" />
+        <option value="$PROJECT_DIR$/src/handler.php" />
       </list>
     </option>
   </component>
@@ -155,7 +151,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termianl&#9;null&#9;null&#10;settings&#9;ACTION&#9;Database.Settings" />
+    <property name="SearchEverywhereHistoryKey" value="terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termianl&#9;null&#9;null&#10;settings&#9;ACTION&#9;Database.Settings" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -235,12 +231,12 @@
       <option name="presentableId" value="Default" />
       <updated>1485464474435</updated>
       <workItem from="1485464478437" duration="2185000" />
-      <workItem from="1485499770065" duration="21052000" />
+      <workItem from="1485499770065" duration="21910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23237000" />
+    <option name="totallyTimeSpent" value="24095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="5" width="1337" height="1161" extended-state="0" />
@@ -358,90 +354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/Helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <marker date="1485520291530" expanded="true" signature="59:677" ph="{...}" />
-            <marker date="1485520291530" expanded="true" signature="70:172" ph=" As named return user age from birthday ..." />
-            <marker date="1485520291530" expanded="true" signature="222:388" ph="..." />
-            <marker date="1485520291530" expanded="true" signature="398:558" ph=" Remove spaces from start and end, ..." />
-            <marker date="1485520291530" expanded="true" signature="610:674" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <marker date="1485521916576" expanded="true" signature="42:1097" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="114:216" ph=" User constructor. ..." />
-            <marker date="1485521916576" expanded="true" signature="277:384" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="393:420" ph=" @return mixed ..." />
-            <marker date="1485521916576" expanded="true" signature="453:494" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="503:536" ph=" @param mixed $login ..." />
-            <marker date="1485521916576" expanded="true" signature="575:618" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="627:654" ph=" @return mixed ..." />
-            <marker date="1485521916576" expanded="true" signature="690:734" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="743:779" ph=" @param mixed $password ..." />
-            <marker date="1485521916576" expanded="true" signature="824:873" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="882:909" ph=" @return mixed ..." />
-            <marker date="1485521916576" expanded="true" signature="940:979" ph="{...}" />
-            <marker date="1485521916576" expanded="true" signature="988:1019" ph=" @param mixed $age ..." />
-            <marker date="1485521916576" expanded="true" signature="1054:1093" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers/DBHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-          <folding>
-            <marker date="1485521624648" expanded="true" signature="35:61" ph="..." />
-            <marker date="1485521624648" expanded="true" signature="78:2022" ph="{...}" />
-            <marker date="1485521624648" expanded="true" signature="295:366" ph="{...}" />
-            <marker date="1485521624648" expanded="false" signature="404:790" ph="{...}" />
-            <marker date="1485521624648" expanded="true" signature="508:698" ph="..." />
-            <marker date="1485521624648" expanded="true" signature="818:1233" ph="{...}" />
-            <marker date="1485521624648" expanded="true" signature="884:1225" ph="..." />
-            <marker date="1485521624648" expanded="true" signature="898:1214" ph="CREATE TABLE... Users" />
-            <marker date="1485521624648" expanded="true" signature="1263:1404" ph="{...}" />
-            <marker date="1485521624648" expanded="true" signature="1339:1384" ph="..." />
-            <marker date="1485521624648" expanded="true" signature="1353:1374" ph="SELECT * FRO... users" />
-            <marker date="1485521624648" expanded="true" signature="1447:1658" ph="{...}" />
-            <marker date="1485521624648" expanded="true" signature="1559:1641" ph="..." />
-            <marker date="1485521624648" expanded="true" signature="1573:1594" ph="SELECT `logi... users" />
-            <marker date="1485521624648" expanded="true" signature="1573:1622" ph="SELECT * FRO... users" />
-            <marker date="1485521624648" expanded="true" signature="1573:1623" ph="SELECT * FRO... users" />
-            <marker date="1485521624648" expanded="true" signature="1573:1631" ph="SELECT * FRO... users" />
-            <marker date="1485521624648" expanded="true" signature="1704:2020" ph="{...}" />
-            <marker date="1485521624648" expanded="true" signature="1889:2012" ph="..." />
-            <marker date="1485521624648" expanded="true" signature="1903:2002" ph="INSERT INTO `users`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <marker date="1485522329941" expanded="true" signature="45:143" ph="..." />
-            <marker date="1485522329941" expanded="true" signature="187:1290" ph="..." />
-            <marker date="1485522329941" expanded="true" signature="219:639" ph="..." />
-            <marker date="1485522329941" expanded="true" signature="271:633" ph="..." />
-            <marker date="1485522329941" expanded="true" signature="676:1288" ph="..." />
-            <marker date="1485522329941" expanded="true" signature="796:1188" ph="..." />
-            <marker date="1485522329941" expanded="true" signature="1196:1282" ph="..." />
-            <marker date="1485522329941" expanded="true" signature="1298:1363" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
@@ -475,12 +387,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1485521916576" expanded="true" signature="42:1097" ph="{...}" />
+            <marker date="1485521916576" expanded="true" signature="114:216" ph=" User constructor. ..." />
+            <marker date="1485521916576" expanded="true" signature="277:384" ph="{...}" />
+            <marker date="1485521916576" expanded="true" signature="393:420" ph=" @return mixed ..." />
+            <marker date="1485521916576" expanded="true" signature="453:494" ph="{...}" />
+            <marker date="1485521916576" expanded="true" signature="503:536" ph=" @param mixed $login ..." />
+            <marker date="1485521916576" expanded="true" signature="575:618" ph="{...}" />
+            <marker date="1485521916576" expanded="true" signature="627:654" ph=" @return mixed ..." />
+            <marker date="1485521916576" expanded="true" signature="690:734" ph="{...}" />
+            <marker date="1485521916576" expanded="true" signature="743:779" ph=" @param mixed $password ..." />
+            <marker date="1485521916576" expanded="true" signature="824:873" ph="{...}" />
+            <marker date="1485521916576" expanded="true" signature="882:909" ph=" @return mixed ..." />
+            <marker date="1485521916576" expanded="true" signature="940:979" ph="{...}" />
+            <marker date="1485521916576" expanded="true" signature="988:1019" ph=" @param mixed $age ..." />
+            <marker date="1485521916576" expanded="true" signature="1054:1093" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/Helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <marker date="1485520291530" expanded="true" signature="59:677" ph="{...}" />
+            <marker date="1485520291530" expanded="true" signature="70:172" ph=" As named return user age from birthday ..." />
+            <marker date="1485520291530" expanded="true" signature="222:388" ph="..." />
+            <marker date="1485520291530" expanded="true" signature="398:558" ph=" Remove spaces from start and end, ..." />
+            <marker date="1485520291530" expanded="true" signature="610:674" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/DBHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1660">
+          <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+          <folding>
+            <marker date="1485521624648" expanded="true" signature="35:61" ph="..." />
+            <marker date="1485521624648" expanded="true" signature="78:2022" ph="{...}" />
+            <marker date="1485521624648" expanded="true" signature="295:366" ph="{...}" />
+            <marker date="1485521624648" expanded="true" signature="404:790" ph="{...}" />
+            <marker date="1485521624648" expanded="true" signature="508:698" ph="..." />
+            <marker date="1485521624648" expanded="true" signature="818:1233" ph="{...}" />
+            <marker date="1485521624648" expanded="true" signature="884:1225" ph="..." />
+            <marker date="1485521624648" expanded="true" signature="898:1214" ph="CREATE TABLE... Users" />
+            <marker date="1485521624648" expanded="true" signature="1263:1404" ph="{...}" />
+            <marker date="1485521624648" expanded="true" signature="1339:1384" ph="..." />
+            <marker date="1485521624648" expanded="true" signature="1353:1374" ph="SELECT * FRO... users" />
+            <marker date="1485521624648" expanded="true" signature="1447:1658" ph="{...}" />
+            <marker date="1485521624648" expanded="true" signature="1559:1641" ph="..." />
+            <marker date="1485521624648" expanded="true" signature="1573:1594" ph="SELECT `logi... users" />
+            <marker date="1485521624648" expanded="true" signature="1573:1622" ph="SELECT * FRO... users" />
+            <marker date="1485521624648" expanded="true" signature="1573:1623" ph="SELECT * FRO... users" />
+            <marker date="1485521624648" expanded="true" signature="1573:1631" ph="SELECT * FRO... users" />
+            <marker date="1485521624648" expanded="true" signature="1704:2020" ph="{...}" />
+            <marker date="1485521624648" expanded="true" signature="1889:2012" ph="..." />
+            <marker date="1485521624648" expanded="true" signature="1903:2002" ph="INSERT INTO `users`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/helpers/WorkerFacade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="37" column="61" lean-forward="false" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+        <state relative-caret-position="60">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#31#52#0#PHP" expanded="true" />
+            <marker date="1485523319798" expanded="true" signature="50:1425" ph="{...}" />
+            <marker date="1485523319798" expanded="true" signature="128:446" ph="{...}" />
+            <marker date="1485523319798" expanded="true" signature="193:344" ph="..." />
+            <marker date="1485523319798" expanded="true" signature="352:439" ph="..." />
+            <marker date="1485523319798" expanded="true" signature="484:1003" ph="{...}" />
+            <marker date="1485523319798" expanded="true" signature="614:894" ph="..." />
+            <marker date="1485523319798" expanded="true" signature="699:789" ph="..." />
+            <marker date="1485523319798" expanded="true" signature="797:884" ph="..." />
+            <marker date="1485523319798" expanded="true" signature="902:996" ph="..." />
+            <marker date="1485523319798" expanded="true" signature="1012:1083" ph=" Worker constructor. ..." />
+            <marker date="1485523319798" expanded="true" signature="1143:1209" ph="{...}" />
+            <marker date="1485523319798" expanded="true" signature="1218:1244" ph=" @return User ..." />
+            <marker date="1485523319798" expanded="true" signature="1276:1316" ph="{...}" />
+            <marker date="1485523319798" expanded="true" signature="1325:1355" ph=" @return DBHelper ..." />
+            <marker date="1485523319798" expanded="true" signature="1385:1423" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/WorkerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <marker date="1485523509855" expanded="true" signature="51:1043" ph="{...}" />
+            <marker date="1485523509855" expanded="true" signature="86:120" ph=" @return WorkerFacade ..." />
+            <marker date="1485523509855" expanded="true" signature="154:196" ph="{...}" />
+            <marker date="1485523509855" expanded="true" signature="205:309" ph=" WorkerFactory constructor. ..." />
+            <marker date="1485523509855" expanded="true" signature="370:1041" ph="{...}" />
+            <marker date="1485523509855" expanded="true" signature="411:694" ph="..." />
+            <marker date="1485523509855" expanded="true" signature="702:1034" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

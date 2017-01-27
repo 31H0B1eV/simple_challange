@@ -1,4 +1,7 @@
 <?php
+/**
+ * here is main logic of forms handling and any post.
+ */
 require "../vendor/autoload.php";
 
 use App\helpers\Helpers;
@@ -10,7 +13,6 @@ if($_SERVER["REQUEST_METHOD"] == 'POST') {
 
             if($_POST['login'] != '' && $_POST['password'] != '' ) {
                 $job = new WorkerFactory($_POST['login'], $_POST['password']);
-
                 $job->getFacade()->login(Helpers::cleanUpInput($_POST['password']));
             }
         } else {
@@ -25,7 +27,6 @@ if($_SERVER["REQUEST_METHOD"] == 'POST') {
         ) {
 
             $job = new WorkerFactory($_POST['login'], $_POST['password'], $_POST['birthday']);
-
             $job->getFacade()->registerUser();
 
         } else {
@@ -36,8 +37,8 @@ if($_SERVER["REQUEST_METHOD"] == 'POST') {
         $user = unserialize($_COOKIE['login']);
 
         $job = new WorkerFactory($user->getLogin(), $user->getPassword());
-
         $counter = $job->getFacade()->callIncrement();
+
         setcookie('userCounter', $counter, time()+60*60*24*365, '/');
         $_COOKIE['userCounter'] = $counter;
 

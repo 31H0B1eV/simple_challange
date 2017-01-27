@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * User object used for describing structure and as helper in type hinting
+ */
 namespace App\helpers;
 
 class User

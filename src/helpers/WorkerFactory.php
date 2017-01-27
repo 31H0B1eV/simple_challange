@@ -1,4 +1,9 @@
 <?php
+/**
+ * Mainly class creator inspired by Factory design pattern from GOF.
+ *
+ * create WorkerFacade instance based on passed parameters
+ */
 
 namespace App\helpers;
 
@@ -24,7 +29,7 @@ class WorkerFactory
     public function __construct($login, $password, $age=0)
     {
         if(func_num_args() == 2) {
-            $this->facade = new WorkerFacade(
+            $this->facade = new WorkerFacade( // used in login form handling
                 new User(
                     Helpers::cleanUpInput($login),
                     password_hash(Helpers::cleanUpInput($password), PASSWORD_DEFAULT)
@@ -32,7 +37,7 @@ class WorkerFactory
                 new DBHelper()
             );
         } else {
-            $this->facade = new WorkerFacade(
+            $this->facade = new WorkerFacade( // used in registration form handling
                 new User(
                     Helpers::cleanUpInput($login),
                     password_hash(Helpers::cleanUpInput($password), PASSWORD_DEFAULT),

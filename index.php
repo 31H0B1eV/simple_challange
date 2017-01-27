@@ -1,5 +1,5 @@
 <?php
-if(
+if( // is nothing set start from this url
     !isset($_COOKIE['login']) &&
     !isset($_GET['login']) &&
     !isset($_GET['register'])
@@ -7,13 +7,13 @@ if(
     header("Location: ?login");
     exit();
 
-} else if(isset($_GET['registration'])) {
+} else if(isset($_GET['registration'])) { // just show some message that can be returned
     echo $_GET['registration'];
 
-} else if(isset($_GET['error'])) {
+} else if(isset($_GET['error'])) { // show error messages that can be returned
     echo $_GET['error'];
 
-} else if(isset($_GET['exit']) && isset($_COOKIE['login'])) {
+} else if(isset($_GET['exit']) && isset($_COOKIE['login'])) { // log out, better to use session and store it into database
     unset($_COOKIE['login']);
     setcookie('login', null, -1, '/');
 

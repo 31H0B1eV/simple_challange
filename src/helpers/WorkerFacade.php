@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Mainly class simplifier inspired by Facade design pattern from GOF.
+ *
+ * it takes all from User and DBHelper classes and make using their functionality
+ * in easy way without unnecessary info
+ */
 namespace App\helpers;
 
 class WorkerFacade
@@ -7,6 +12,9 @@ class WorkerFacade
     protected $user;
     protected $db;
 
+    /**
+     * Main registration form logic
+     */
     public function registerUser()
     {
         if(!$this->getDb()->getRecord($this->getUser())) {
@@ -27,6 +35,12 @@ class WorkerFacade
         }
     }
 
+    /**
+     * Main login form logic
+     * already have correct user login and check password value
+     *
+     * @param $password
+     */
     public function login($password)
     {
         $record_with_correct_login = $this->getDb()->getRecord($this->getUser());
@@ -48,6 +62,12 @@ class WorkerFacade
         }
     }
 
+    /**
+     * Method just for consistency
+     * simply want to have all required workers in this class
+     *
+     * @return mixed
+     */
     public function callIncrement()
     {
         $this->getDb()->increment($this->getUser());

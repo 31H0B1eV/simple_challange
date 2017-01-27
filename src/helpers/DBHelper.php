@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * This is not fully functional GRUD class
+ * just have all methods that required by this app for working with database
+ */
 namespace App\helpers;
 
 use PDO;
